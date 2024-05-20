@@ -1,7 +1,15 @@
-def greet():
+def greet(name):
     print("Hello")
     print("My name is")
-    print("Mauricio")
+    print(name)
 
 
-greet()
+greet("Steve")
+
+# Function with more parameters
+
+def greet_with(name, location):
+    print(f"Hello my name is {name}")
+    print(f"I live in {location}")
+
+greet_with(location = "Coatzacoalcos", name = "Mauricio")
