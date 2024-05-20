@@ -1,0 +1,10 @@
+word_list = ["cielo", "mariposa", "montaña", "libro", "estación", 
+    "misterio", "melodía", "sol", "estrella", "flor", 
+    "río", "avión", "jardín", "castillo", "nube", 
+    "luz", "bosque", "sueño", "viaje", "luna", 
+    "pintura", "océano", "puente", "sonrisa", "música", 
+    "ciudad", "camino", "historia", "poesía", "desierto", 
+    "isla", "mar", "guitarra", "viento", "travesía", 
+    "noche", "mañana", "tarde", "invierno", "verano", 
+    "otoño", "primavera", "rayo", "tormenta", "roca", 
+    "árbol", "tierra", "estrella", "rayo", "lluvia"]

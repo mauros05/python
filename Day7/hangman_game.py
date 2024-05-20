@@ -1,6 +1,7 @@
 import random
+import word_list
 
-word_list = ["apple", "nintendo", "controller"]
+word_list = word_list.word_list
 
 random_word = random.choice(word_list)
 
@@ -19,6 +20,9 @@ attemps = 6
 while end_of_game == False:
     user_input = input("Guess a letter: ").lower()
 
+    if user_input in display_word:
+        print(f"You've already guessed {user_input}")
+
     for position in range(word_length):
         letter = random_word[position]
         if letter == user_input:
@@ -29,7 +33,7 @@ while end_of_game == False:
 
     if user_input not in random_word:
         attemps -= 1
-        print(f"You have {attemps} reminded")
+        print(f"You have {attemps} attemps reminded")
         if attemps == 0:
             end_of_game = True
             print("You Lose")
