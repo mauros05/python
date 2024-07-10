@@ -1,10 +1,16 @@
 {% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
 {% block title %}Login{% endblock %}
 {% block content %}
-    <form method="POST" action="{{ url_for('login') }}" novalidate>
+
+<div class="container">
+    <h1>Login</h1>
+    {{render_form(form)}}
+</div>
+
+    <!-- <form method="POST" action="{{ url_for('login') }}" novalidate>
         {{ form.csrf_token }}
         <div class="container">
-            <h1>Login</h1>
             <div class="mb-3">
                 {{ form.email.label }} {{ form.email(size=30) }}
                 {% for err in form.email.errors %}
@@ -19,5 +25,5 @@
             </div>
             {{ form.submit }}
         </div>
-    </form>
+    </form> -->
 {% endblock %}
